@@ -22,6 +22,9 @@ const Home = (props) => {
           onClick={onButtonClick}
           value={loggedIn ? 'Cerrar sesión' : 'Iniciar sesión'}
         />
+        <button className="secondaryButton" type="button" onClick={() => navigate('/formulario')}>
+          Ir al formulario tradicional
+        </button>
         {loggedIn ? <div>Tu correo electrónico es {email}</div> : <div />}
       </div>
     </div>
